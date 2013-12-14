@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+	<script id="card-view" type="text/template">
+	<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		    <h3 class="panel-title">Video Poker</h3>
+		</div>
+		<div class="panel-body">
+			<h3 class="win-text">Select cards</h3>
+			<table class="table">
+				<tr>
+					<td>
+						<div id="money-view"/>
+					</td>
+					<td>
+						<ul id="score-list" class="list-group">
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<table class="table">
+				<tr>
+					<td>
+						<table class="table">
+							<tr id="deck-row">
+							</tr>
+						</table>
+					</td>
+					<td id="deck-back">
+					</td>
+				</tr>
+			</table>
+
+			<table>
+				<tr>
+					<td>
+						<button type="button" class="btn btn-default" id="bet-button">Bet</a>
+					</td>
+					<td>
+						<button type="button" class="btn btn-default" id="deal-button">Deal</a>					
+					</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</div>
+	</script>
+    
+    <script id="card-template" type="text/template">
+		<img src="<%=Image%>"/>
+    </script>
+
+    <script id="deck-template" type="text/template">
+		<img src="images/deck/b1fv.png"/>
+    </script>
+
+    <script id="money-template" type="text/template">
+		<table >
+			<tr>
+				<td>
+					<h5>Player: <%=Money%></h5>					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h5>Pot: <%=Pot%></h5>					
+				</td>
+			</tr>
+		<table>
+    </script>
+
+	<script id="score-template" type="text/template">
+		<table class="score-table">
+			<tr>
+				<td>			
+					<h5><%=Key%></h5>
+				</td>
+				<td>
+					<h5 style="float:right;"><%=Value%></h5>
+				</td>
+			</tr>
+		<table>
+	</script>
+	
+	<script src="jquery-2.0.3.min.js"></script>
+  	<script src="underscore-min.js"></script>
+	<script src="backbone-min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap-3.0.3-dist/dist/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="bootstrap-3.0.3-dist/dist/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="bootstrap-3.0.3-dist/dist/js/bootstrap.min.js"></script>
+
+    <script src="Card.js"></script>
+    <script src="main.js"></script>
+    <script src="jquery.timer.js"></script>
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+</body>
+</html>

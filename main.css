@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes myfirst
+{
+/*from {background: red;}*/
+to {background: blue;}
+to {color:white;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+/*from {background: red;}*/
+to {background: blue;}
+to {color:white;}
+}
+
+.win-animation {
+animation: myfirst 1s;
+-webkit-animation: myfirst 1s; /* Safari and Chrome */
+} 
+
+
+
+@keyframes buttonblink
+{
+to {background: yellow;}
+}
+
+@-webkit-keyframes buttonblink /* Safari and Chrome */
+{
+to {background: yellow;}
+}
+
+.buttonblink-animation {
+animation: buttonblink 1s;
+-webkit-animation: buttonblink 1s; /* Safari and Chrome */
+} 
+
+body {
+background-color:#00FF00;
+}
+
+.container {
+background-color:#00FF00;
+}
+.panel{
+background-color:#00FF00;
+}
+.panel-body{
+background-color:#00FF00;
+}
+
+.table tr td{
+background-color:#00FF00;
+}
+
+.list-group {
+background-color:#00FF00;
+}
+
+.score-table {
+	width:100%;
+}
+.score-table tr {
+background-color:white !important;
+}
+.score-table td {
+background-color:white !important;
+}
